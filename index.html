@@ -7,18 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
+      <nav class="panel panel-primary">
+        <nav class="panel-heading">
+          <a class="panel-title" href="index.html">Home</a>
+          <a class="panel-title" href="#about">About</a>
+          <a class="panel-title" href="#bar">Charts</a>
+          <!-- <a class="panel-title" href="https://gibhub.com/corypeacock/plotly_deployment">Code</a> -->
+        </nav>
+      </nav>
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="row">
+
+    <div class="row panel panel-primary">
+      <div class="panel-heading">
+        <h1 id="about">About these charts</h1>
+      </div>
+      <div class="panel-body">
+        <p style="font-size: 20px">The charts below show details from the selected sample, including the top 
+          bacteria cultures found, the frequency of belly button washing, and a bubble chart of the bacteria cultures per sample.
+        <a href="https://gibhub.com/corypeacock/plotly_deployment" target="_blank">Code here.</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 15px;">
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
@@ -39,6 +61,7 @@
         <div id="gauge"></div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
